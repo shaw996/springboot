@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: moment
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+minio:
+  endpoint: http://119.45.151.249:9000 #minio服务地址
+  bucket-name: moment #存储桶名称
+  access-key: VQ4vmq1rlD8HR5yNKqYP #访问的key
+  secret-key: QE0SVJVX4u0HknqJ5Riz3UdaJLPmXaGByLxYDiNA #访问的密钥
+  base-url: http://localhost:8080/api/file/preview/
+
+# springdoc-openapi项目配置
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: 'default'
+      paths-to-match: '/**'
+      packages-to-scan: com.shaw.moment.core
+# knife4j的增强配置，不需要增强可以不配
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
+    swagger-model-name: 实体类列表

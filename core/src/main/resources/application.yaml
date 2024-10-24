@@ -1,6 +1,8 @@
 spring:
+  profiles:
+    active: local
   application:
-    name: <AppName>
+    name: <App Name>
 
 server:
   port: 8080
@@ -8,11 +10,11 @@ server:
     context-path: /api
 
 minio:
-  endpoint: <MinioServer> #minio服务地址
-  bucket-name: <BucketName> #存储桶名称
-  access-key: <AccessKey> #访问的key
-  secret-key: <SecretKey> #访问的密钥
-  base-url: http://localhost:8080/api/file/preview/
+  endpoint: <Minio Server> #minio服务地址
+  bucket-name: <Bucket Name> #存储桶名称
+  access-key: <Access Key> #访问的key
+  secret-key: <Secret Key> #访问的密钥
+  base-url: <Base URL> #文件预览BaseURL，比如：http://localhost:8080/api/file/preview/
 
 # springdoc-openapi项目配置
 springdoc:
@@ -31,4 +33,4 @@ knife4j:
   enable: true
   setting:
     language: zh_cn
-    swagger-model-name: 实体类列表
+    swagger-model-name: <New Name>

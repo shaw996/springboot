@@ -1,3 +1,8 @@
-application.yaml.local
-application.yml.local
-application.properties.local
+application-local.yaml
+application-local.yml
+application-local.properties
+
+**/target/**
+**/build/**
+**/dist/**
+**/node_modules/**

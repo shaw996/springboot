@@ -1,21 +1,33 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
 spring:
   profiles:
     active: local
   application:
     name: <App Name>
-
-server:
-  port: 8080
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: <User Name>
+    password: <Password>
+    url: jdbc:mysql://<Host>:<Port>/<Database>?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2b8
   servlet:
-    context-path: /api
-
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: is_deleted  # 全局逻辑删除字段值
+      logic-delete-value: 1        # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0    # 逻辑未删除值(默认为 0)
 minio:
   endpoint: <Minio Server> #minio服务地址
   bucket-name: <Bucket Name> #存储桶名称
   access-key: <Access Key> #访问的key
   secret-key: <Secret Key> #访问的密钥
   base-url: <Base URL> #文件预览BaseURL，比如：http://localhost:8080/api/file/preview/
-
 # springdoc-openapi项目配置
 springdoc:
   swagger-ui:

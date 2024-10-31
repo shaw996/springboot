@@ -1,7 +1,7 @@
-package com.shaw.moment.core.util;
+package com.shaw.springboot.core.util;
 
-import com.shaw.moment.core.config.MinioConfig;
-import com.shaw.moment.core.vo.BucketVo;
+import com.shaw.springboot.core.config.MinioConfig;
+import com.shaw.springboot.core.vo.BucketVo;
 import io.minio.*;
 import io.minio.http.Method;
 import io.minio.messages.Item;

@@ -1,4 +1,4 @@
-package com.shaw.moment.core.config;
+package com.shaw.springboot.core.config;
 
 import io.minio.MinioClient;
 import lombok.Data;

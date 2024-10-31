@@ -1,4 +1,4 @@
-package com.shaw.moment.core.vo;
+package com.shaw.springboot.core.vo;
 
 import io.minio.messages.Bucket;
 import io.swagger.v3.oas.annotations.media.Schema;

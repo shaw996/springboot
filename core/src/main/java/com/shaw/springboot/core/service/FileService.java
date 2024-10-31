@@ -1,7 +1,7 @@
-package com.shaw.moment.core.service;
+package com.shaw.springboot.core.service;
 
-import com.shaw.moment.common.util.Result;
-import com.shaw.moment.core.vo.BucketVo;
+import com.shaw.springboot.common.util.Result;
+import com.shaw.springboot.core.vo.BucketVo;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.multipart.MultipartFile;

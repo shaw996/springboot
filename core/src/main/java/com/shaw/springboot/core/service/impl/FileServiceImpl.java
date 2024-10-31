@@ -1,9 +1,9 @@
-package com.shaw.moment.core.service.impl;
+package com.shaw.springboot.core.service.impl;
 
-import com.shaw.moment.common.util.Result;
-import com.shaw.moment.core.service.FileService;
-import com.shaw.moment.core.util.MinioUtil;
-import com.shaw.moment.core.vo.BucketVo;
+import com.shaw.springboot.common.util.Result;
+import com.shaw.springboot.core.service.FileService;
+import com.shaw.springboot.core.util.MinioUtil;
+import com.shaw.springboot.core.vo.BucketVo;
 import jakarta.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

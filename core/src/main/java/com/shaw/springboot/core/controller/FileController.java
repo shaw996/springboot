@@ -1,7 +1,7 @@
-package com.shaw.moment.core.controller;
+package com.shaw.springboot.core.controller;
 
-import com.shaw.moment.common.util.Result;
-import com.shaw.moment.core.service.FileService;
+import com.shaw.springboot.common.util.Result;
+import com.shaw.springboot.core.service.FileService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;

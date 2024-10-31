@@ -1,4 +1,4 @@
-package com.shaw.moment.common.util;
+package com.shaw.springboot.common.util;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
